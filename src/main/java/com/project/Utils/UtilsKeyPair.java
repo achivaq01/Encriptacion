@@ -1,9 +1,6 @@
 package com.project.Utils;
 
-import org.bouncycastle.openpgp.PGPException;
-import org.bouncycastle.openpgp.PGPPrivateKey;
-import org.bouncycastle.openpgp.PGPPublicKey;
-import org.bouncycastle.openpgp.PGPUtil;
+import org.bouncycastle.openpgp.*;
 import org.bouncycastle.openpgp.operator.jcajce.JcaPGPKeyPair;
 
 import java.io.File;
@@ -29,7 +26,7 @@ public class UtilsKeyPair {
         }
 
         try (FileOutputStream fileOutputStream = new FileOutputStream(privateKeyFile)) {
-            fileOutputStream.write(privateKey.getPrivateKeyDataPacket().getEncoded());
+
         }
     }
 
